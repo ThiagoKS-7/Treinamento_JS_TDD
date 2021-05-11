@@ -45,31 +45,33 @@ function criarArray(){
 function averiguar(){
     array1.forEach(element =>{
         console.log("Entrada:"+ element);
-        array2.push(element);
         console.log("Anterior: "+array2[i-1]);
-        if(array2[i-1] < element) {
-             maior[0] = element;
+        console.log(i);
+        array2.push(element);
+        if ((i-1) == -1){
+            maior[0] = element;
             i +=1;
-        } 
-        else{
-            i+=1;
-        }
-        if(array2[i-1] > element) {
-             menor[0] = element;
-            i+=1;
-        }  
-        else {
-            i+=1;
-        }
-
-        $(".ex1")
-            .css("background","green")
-            .text(`Maior: ${maior[0]} Menor: ${menor[0]}`);
-
-        console.log(`Maior: ${maior[0]}`);
-        console.log(`Menor: ${menor[0]}`);
-    });
+            console.log(maior);
+        } else {      
+            if(maior[0] < element) {
+                 maior[0] = element;
+                i +=1;
+            } 
+            else if(menor[0] > element) {
+                 menor[0] = element;
+                i+=1;
+            }  
+            else {
+                i+=1;
+            }
     
+            $(".ex1")
+                .css("background","green")
+                .text(`Maior: ${maior[0]} Menor: ${menor[0]}`);
+    
+            console.log(`Maior: ${maior[0]}`);
+            console.log(`Menor: ${menor[0]}`);
+        }
+    });
 }
-
 
