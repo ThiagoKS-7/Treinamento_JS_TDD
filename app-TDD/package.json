@@ -1,0 +1,27 @@
+{
+  "name": "curso-tdd",
+  "version": "1.0.0",
+  "description": "Biblioteca do curso de JS com TDD na prática",
+  "main": "index.js",
+  "scripts": {
+    "lint":"./node_modules/.bin/eslint src/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/ThiagoKS-7/TreinamentoJS)"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Thiago Kasper de Souza <thiago.souza@meta.com.br> (https://www.linkedin.com/in/thiagokasper/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.9.0"
+  }
+}

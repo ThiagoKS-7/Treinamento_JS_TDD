@@ -1,0 +1,29 @@
+body{
+    font:14px;
+    background: #f8f8f8;
+}
+
+.ex1{
+    width: 320px;
+    padding: 10px;
+    background: #1e90ff;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    }
+
+label{
+    display: block;
+    padding: 10px;
+    background: #f8f8f8;
+    margin: 10px 0;
+}
+
+input{
+    width: 138px;
+    padding: 5px;
+}
+
+button{
+    width: 100px;
+}
